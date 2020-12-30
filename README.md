@@ -6,12 +6,12 @@ As an alternative to a full-blown Anaconda installation, a more lightweight envi
 
 ## Setup and Configuration
 
-1. Install Miniconda from as follows
+1. Install Miniconda as follows
     * `wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
     * `bash Miniconda3-latest-Linux-x86_64.sh`
 1. Prevent the base environment from automatically activating conda `conda config --set auto_activate_base false`
 1. Create a completely empty environment (will not even have python) `conda create --name ds00`
-    * To  create the environment with a specific version of Python do (**NOTE** this will install Python from the *default* repository) `conda create --name ds00 python=3.8.2`
+    * To  create the environment with a specific version of Python (**NOTE** this will install Python from the *default* repository) `conda create --name ds00 python=3.8.2`
 1. Activate the new environment `conda activate ds00`
 1. Add conda-forge as the first channel `conda config --env --add channels conda-forge`
 1. Ensure that conda-forge is used if the package is available (even if there is a newer version in defaults) `conda config --env --set channel_priority strict`
@@ -26,7 +26,7 @@ As an alternative to a full-blown Anaconda installation, a more lightweight envi
 1. Third party packages exist but they are not available in in Anaconda *default* channel which is used for base environment
 1. A third party package exists in conda-forge but installing this will then also upgrade some existing packages in the base environment. **NOTE** the base environment will then no longer be exclusively sourced from the *default* Anaconda channel
 1. Install as follows `conda install -c conda-forge conda-bash-completion`
-1. On Fedora it is necessary to <TAB> twice
+1. On Fedora it is necessary to \<TAB\> twice
 1. If the base environment is not activated by default then need to source the bash_completion.sh script from ~/.bashrc as follows
     * `CONDA_ROOT=/home/brett/miniconda3`
     * `if [[ -r $CONDA_ROOT/etc/profile.d/bash_completion.sh ]]; then`
