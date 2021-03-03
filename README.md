@@ -22,6 +22,7 @@ As an alternative to a full-blown Anaconda installation, a more lightweight envi
 1. If the requested package cannot be found in defaults, then can install it from another channel with `-c` option e.g. to install plotly_express from the plotly channel `conda install -c plotly plotly_express`
 
 ## Removing unwanted channels
+1. You can see which channels (and their priority order) are being used by Conda package manager with `conda config --show channels`
 1. If there is a channel you do not want to use, simply do `conda config --remove channels NOT_WANTED` which will remove the channel named NOT_WANTED.
 
 ## Bash Auto-completion
