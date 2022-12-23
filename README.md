@@ -1,5 +1,7 @@
 # Setting up Python environments with Miniconda
 
+NOTE: For the impatient and/or experienced, concise instructions are [here](Impatient_Conda_Linux.md)
+
 Managing Python packages and environments can be complex due to a spiders web of, often, conflicting requirements, ever-changing interdependencies etc. Fortunantely there are some tools to make this easier
 1. **Anaconda Python**: this is a large (~2GB) installation of a specific version of python along with many common data science packages. This is often the easiest for new users. However, managing different environments with different versions of Python and packages is still relatively complex and requires the user to learn the conda management tool if any package or python version outside of the baseline Anaconda ecosystem is need.
 1. **Miniconda**: this is a bare bones version of python and the conda management tool. This approach is very lightweight but requires a certain level of understanding about python environments.
