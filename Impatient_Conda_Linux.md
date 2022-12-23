@@ -31,7 +31,6 @@ These instructions are not intended for beginners!
 * `conda activate ds39`
 * `conda install numpy bottleneck numexpr pandas scipy scikit-learn matplotlib`
 * `conda deactivate`
-* `conda activate base`
 * `jupyter-notebook` and create new notebook file, should be able to select kernel from all other installed environments
 * Switch to Nbextensions tab and enable these extensions
     * Autopep8 (requires package autopep8 to be installed in each environment)
