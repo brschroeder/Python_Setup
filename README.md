@@ -21,19 +21,18 @@ Managing Python packages and environments can be complex due to a spiders web of
 
 1. Install Miniconda as follows
     * `wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
-    * `bash Miniconda3-latest-Linux-x86_64.sh`
+    * `bash Miniconda3-latest-Linux-x86_64.sh`, say yes to conda init
 1. Prevent the base environment from automatically activating conda `conda config --set auto_activate_base false`
 1. Verify which channels are currently being used (should only be "defaults") `conda config --show channels`
 1. Add the conda-forge channel `conda config --add channels conda-forge`
 1. Verify conda-farge channel is included at top of the list `conda config --show channels`
-1. Ensure that conda-forge is used if the package is available (even if there is a newer version in defaults) `conda config --env --set channel_priority strict`
-1. Can view all of conda's configuration parameters with `conda config --show`
+1. Ensure that conda-forge is used if the package is available in defaults (even if there is a newer version in defaults) `conda config --set channel_priority strict`
+1. All of conda's configuration parameters can be viewed with `conda config --show`
 
 ## Bash Auto-completion
 1. Starting in v4.4 conda has dropped native Bash auto-completion
 1. Third party packages now exist to enable equivalent functionality
 1. Install as follows `conda install conda-bash-completion`
-1. On Fedora it is necessary to \<TAB\> twice
 1. If the base environment is not activated by default then need to explicitly source the bash_completion.sh script from ~/.bashrc as follows
 ```
 CONDA_ROOT=/home/brett/miniconda3
