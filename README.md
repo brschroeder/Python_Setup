@@ -62,7 +62,9 @@ These environments will generally be project- or task-specific. For Jupyter Note
 1. Install some useful packages `conda install numpy bottleneck numexpr pandas scipy scikit-learn matplotlib`
 
 ## First time use: configure Jupyter notebook
-1. Start Jupyter notebook with `jupyter-notebook` (base environment does not need to be active)
+1. Start Jupyter notebook with 
+    * `conda activate base`
+    * `jupyter-notebook`
 1. Change to the Nbextensions tab
 1. Uncheck the box "disable configuration for nbextensions without explicit ..."
 1. Enable the following extensions
