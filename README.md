@@ -68,13 +68,13 @@ These environments will generally be project- or task-specific. For Jupyter Note
 1. Change to the Nbextensions tab
 1. Uncheck the box "disable configuration for nbextensions without explicit ..."
 1. Enable the following extensions
-    * Hinterland (for code autocompletion)
     * Autopep8 (this will clean up code to be PEP8 compliant)
     * Codefolding (requires CodeMirror mode extensions to be enabled)
     * Comment/Uncomment hotkey (Ctrl-/ seems to work the same as in VS Code)
     * Datestamper (to automatically insert current date & time)
     * Hide Input AND Hide Input All (to collapse the code in a single or all cells respectively)
     * Highlight Selected Word
+    * Hinterland (for code autocompletion)
     * Variable Inspector
 
 ## Removing Miniconda

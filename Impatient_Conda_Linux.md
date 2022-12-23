@@ -2,11 +2,10 @@
 These instructions are not intended for beginners!
 * Install miniconda `bash ~/Downloads/Miniconda3-latest-Linux-x86_64.sh` (yes to conda init)
 * `conda config --set auto_activate_base false`
-* `source ~/.bashrc` <<-- **IMPORTANT**
-* `conda activate base`
 * `conda config --add channels conda-forge`
 * `conda config --show channels`
 * `conda config --set channel_priority strict`
+* `source ~/.bashrc` <<-- **IMPORTANT**
 * `conda list` all packages should be from default channel
 * `conda update --all`
 * `conda list` to verify all packages from conda-forge
@@ -35,11 +34,11 @@ These instructions are not intended for beginners!
 * `conda activate base`
 * `jupyter-notebook` and create new notebook file, should be able to select kernel from all other installed environments
 * Switch to Nbextensions tab and enable these extensions
-    * Hinterland for auto-completion
     * Autopep8 (requires package autopep8 to be installed in each environment)
     * Codefolding (requires CodeMirror mode extensions to be enabled)
     * Comment/Uncomment hotkey (works with default Alt-c, but NOT with Ctrl-/)
     * datestamper
     * Hide input AND hide input all
     * Highlight selected word
+    * Hinterland for auto-completion
     * Variable Inspector
